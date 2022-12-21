@@ -4,20 +4,15 @@ services:
     container_name: app-vue
     build:
       context: ./vue
-    networks:
-      - typescript
 
   orchestrator:
     container_name: orchestrator
     ports:
       - 80:80
-
-    networks:
-      - typescript
     build:
       context: .
 
-networks:
-  typescript:
-    external:
-      name: typescript_typescript
+# networks:
+#   typescript:
+#     external:
+#       name: typescript_typescript
