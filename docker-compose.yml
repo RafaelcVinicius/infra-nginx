@@ -6,6 +6,7 @@ services:
       - code:/var/www/
       - /etc/ssl/certs:/etc/ssl/certs
       - /etc/ssl/private:/etc/ssl/private
+      - /etc/letsencrypt/live/rafaelcoldebella.com.br:/rafaelcoldebella.com.br
     ports:
       - 80:80
       - 443:443
